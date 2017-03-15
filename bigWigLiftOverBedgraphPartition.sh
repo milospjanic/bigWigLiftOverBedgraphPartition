@@ -63,7 +63,7 @@ then
 wget https://genome.ucsc.edu/goldenpath/help/hg19.chrom.sizes
 fi
 
-for chr in {1..22}
+for chr in {1..22} X Y
 do
 
 export chr
