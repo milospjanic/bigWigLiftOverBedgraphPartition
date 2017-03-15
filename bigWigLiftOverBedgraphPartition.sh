@@ -63,6 +63,8 @@ then
 wget https://genome.ucsc.edu/goldenpath/help/hg19.chrom.sizes
 fi
 
+#partition the bedgraph file overlapping structure for each chr separately
+
 for chr in {1..22} X Y
 do
 
