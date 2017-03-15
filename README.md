@@ -15,6 +15,7 @@ Script:
 
 ## Script will partition the structure of overlapping intervals in a bedgraph file and correct possible errors for downstream manipulation with bedGraphToBigWig with an illegal bedgraph file.
 
+
 Script will save new bigwig file with .hg19 extension
 
 
