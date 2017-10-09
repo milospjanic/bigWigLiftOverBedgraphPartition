@@ -22,11 +22,11 @@ fi
 
 cd ~/$DIR
 
-#check if bigWigToBedGraph file exists, if not, download from http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64.v287/bigWigToBedGraph
+#check if bigWigToBedGraph file exists, if not, download from http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bigWigToBedGraph
 
 if [ ! -f $FILE1 ]
 then
-wget http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64.v287/bigWigToBedGraph
+wget http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bigWigToBedGraph
 fi
 
 chmod 755 ./bigWigToBedGraph
@@ -43,11 +43,11 @@ fi
 
 gunzip hg18ToHg19.over.chain.gz
 
-#check if liftOver file exists, if not, download from http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64.v287/liftOver
+#check if liftOver file exists, if not, download from http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/liftOver
 
 if [ ! -f $FILE3 ]
 then
-wget http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64.v287/liftOver
+wget http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/liftOver
 fi
 
 chmod 755 ./liftOver
@@ -88,11 +88,11 @@ done
 sort -k1,1 -k2,2n out.bedGraph.hg19.sort.merge > out.bedGraph.hg19.sort.merge.sort
 
 
-#check if bedGraphToBigWig file exists, if not, download from http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64.v287/bedGraphToBigWig
+#check if bedGraphToBigWig file exists, if not, download from http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedGraphToBigWig
 
 if [ ! -f $FILE5 ]
 then
-wget http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64.v287/bedGraphToBigWig
+wget http://hgdownload.soe.ucsc.edu/admin/exe/macOSX.x86_64/bedGraphToBigWig
 fi
 
 chmod 755 ./bedGraphToBigWig
